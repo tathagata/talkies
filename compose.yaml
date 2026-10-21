@@ -1,0 +1,12 @@
+services:
+  talkies:
+    build: .
+    ports:
+      - "127.0.0.1:4318:4318"
+    volumes:
+      - ${TALKIES_WORKSPACE:-./workspace}:/workspace
+    environment:
+      TALKIES_BRIDGE_TOKEN: ${TALKIES_BRIDGE_TOKEN:-}
+      TALKIES_BRIDGE_URL: http://host.docker.internal:4319/run
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

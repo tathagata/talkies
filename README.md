@@ -56,3 +56,27 @@ AI results never apply automatically. Preview the slide/narrative proposal, appl
 ## Development
 
 `npm test` covers export privacy, stable identity validation, persistence, request-origin protection, disabled AI, Git commits, and repeat publishing against a temporary bare Git remote. Tests do not publish externally. `npm run bridge` starts the host bridge; `npm start` starts the UI/API.
+
+## Distraction-free writing and shortcuts
+
+Use the expand icon in the top-right corner of Slide Markdown, Thought Process, Narrative, Live Preview, or the AI workspace to fill the window with that component. Click the icon again or press Escape to restore the workspace. Existing text, cursor selection, and autosave stay intact. Preview focus includes previous/next controls and arrow-key navigation. This is a window-filling layout, so it works without browser fullscreen permissions.
+
+Use **⌘ on Mac** or **Ctrl on Windows/Linux**, plus **Alt / Option**:
+
+| Shortcut | Action |
+| --- | --- |
+| ⌘/Ctrl Alt 1 | Focus Slide Markdown |
+| ⌘/Ctrl Alt 2 | Focus Thought Process |
+| ⌘/Ctrl Alt 3 | Focus Narrative |
+| ⌘/Ctrl Alt 4 | Focus Live Preview |
+| ⌘/Ctrl Alt 5 or A | Focus the AI prompt |
+| ⌘/Ctrl Alt 6 | Slide + narrative rehearsal |
+| ⌘/Ctrl Alt ← / → | Previous / next slide from any editor |
+| ⌘/Ctrl Alt 0 or Escape | Exit component focus |
+| ⌘/Ctrl Alt / | Shortcut reference |
+| ⌘/Ctrl Enter | Run the selected AI task while in the AI workspace |
+| ⌘/Ctrl S | Save |
+
+In preview focus, bare arrow keys, Page Up / Down, and space navigate slides. Normal text-editing keys are left intact in writing fields. A **Shortcuts** button opens the reference.
+
+The **Your prompt** field in AI workspace is saved per slide and passed to review, research, draft, rewrite, and the external-agent task package. Pending edits are saved before making the request. Prompts are excluded from HTML exports; like other preparation content, they are visible to people with access to the talk's Git repository.

@@ -1,1 +1,1 @@
-{"name":"talkies","version":"0.1.0","private":true,"type":"module","scripts":{"start":"node server.js","test":"node --test","bridge":"node bridge.js"},"dependencies":{"@marp-team/marp-core":"^5.0.2","express":"^5.1.0"}}
+{"name":"talkies","version":"0.1.0","private":true,"type":"module","scripts":{"start":"node server.js","test":"node --test","bridge":"node bridge.js"},"dependencies":{"@marp-team/marp-core":"^5.0.2","express":"^5.1.0"},"devDependencies":{"jsdom":"^30.1.3"}}
